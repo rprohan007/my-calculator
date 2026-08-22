@@ -20,7 +20,7 @@ def multiply(a, b):
     """Multiply two numbers with input validation and logging."""
     if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
         raise TypeError("Both arguments must be numbers")
-    
+
     print(f"Multiplying {a} × {b}")  # Added logging
     result = a * b
     print(f"Result: {result}")
@@ -33,7 +33,7 @@ def divide(a, b):
         raise TypeError("Division requires numeric inputs")
     if b == 0:
         raise ValueError(f"Cannot divide {a} by zero - division by zero is undefined")
-    
+
     print(f"Dividing {a} ÷ {b}")  # Added logging
     result = a / b
     print(f"Result: {result}")
@@ -42,7 +42,7 @@ def divide(a, b):
 
 def power(a, b):
     """Raise a to the power of b."""
-    return a ** b
+    return a**b
 
 
 def sqrt(a):
@@ -50,9 +50,6 @@ def sqrt(a):
     if a < 0:
         raise ValueError("Cannot calculate square root of a negative number")
     return math.sqrt(a)
-
-
-# TODO: Students will add multiply, divide, power, sqrt functions
 
 
 if __name__ == "__main__":

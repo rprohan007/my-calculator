@@ -60,7 +60,6 @@ class TestPowerSqrt:
 
     def test_sqrt_negative_number(self):
         with pytest.raises(
-            ValueError,
-            match="Cannot calculate square root of a negative number"
+            ValueError, match="Cannot calculate square root of a negative number"
         ):
             sqrt(-1)
